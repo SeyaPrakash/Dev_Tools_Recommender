@@ -1,6 +1,5 @@
 body {
-  background-color: whitesmoke;
-  /* Light gray background */
+  background-color: black;
   margin: 0;
   padding: 20px;
 }
@@ -9,10 +8,8 @@ h2 {
   font-family: "Honk", system-ui;
   text-align: center;
   color: #333;
-  /* Dark gray header color */
   margin-bottom: 20px;
   font-size: 40px;
-  /* Larger font size for header */
 }
 
 ul {
@@ -25,47 +22,39 @@ li {
   font-weight: 600;
   font-style: normal;
   margin-bottom: 20px;
-  /* Increased margin between list items */
   padding: 15px;
-  background-color: rgb(255, 255, 172);
-  /* White background for list items */
+  background: linear-gradient(32deg, #03a9f4, #ffeb3b, #f441a5, #03a9f4);
+  transition: all 1.5s ease;
   border-radius: 16px;
-  box-shadow: 0 8px 16px rgb(172, 0, 106);
-  /* Soft shadow */
+  box-shadow: 0 8px 16px white;
   cursor: pointer;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  /* Font size for list items */
   display: flex;
-  /* Make the li a flex container */
   align-items: center;
-  /* Center items vertically */
 }
 
 li:hover {
   transform: translateY(-5px);
-  /* Move up slightly on hover */
-  box-shadow: 0 8px 16px rgba(5, 203, 157, 0.942);
-  /* Increase shadow on hover */
+  box-shadow: 0 8px 16px red;
 }
 
-/* Add a subtle gradient background for the body */
 body {
-  background-image: linear-gradient(to bottom right, white, whitesmoke);
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.338), black);
 }
 
-/* Style the text inside list items */
 li span {
   color: #333;
-  /* Dark gray text color */
-  font-size: 15px;
-  /* Font size for list item text */
+  font-size: 18px;
   font-weight: bold;
   margin-left: 10px;
-  /* Add space between icon and text */
 }
 
-/* Add a border radius to the last list item */
 li:last-child {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+}
+
+li span:hover {
+  backdrop-filter: blur(0px);
+  color: #ffffff;
 }
